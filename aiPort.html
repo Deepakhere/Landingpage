@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI World || AI Port</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="ai.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body.dark {
+            background-color: #292c35;
+            color: white;
+        }
+
+        .checkbox {
+            opacity: 0;
+            position: absolute;
+        }
+
+        .checkbox-label {
+            background-color: #111;
+            width: 50px;
+            height: 26px;
+            border-radius: 50px;
+            position: relative;
+            padding:2px 0px 0px 10px ;
+            cursor: pointer;        
+        }
+
+        .fa-moon-o {
+            color: #f1c40f;
+        }
+
+        .fa-sun-o {
+            color: Dodgerblue;
+        }
+
+        .checkbox-label .ball {
+            background-color: #fff;
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            border-radius: 50%;
+            transition: transform 0.2s linear;
+        }
+
+        .checkbox:checked+.checkbox-label .ball {
+            transform: translateX(24px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <nav class="navbar navbar-light bg-light" style="box-shadow: 0px 0px 2px 0px;">
+            <div class="" style="float: right;">
+                <span class="navbar-brand text-dark" style="font-weight: bold; margin-left:30px"><span
+                        class="text-primary">AI></span>World</span>
+                <!-- dark mode toggle -->
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="checkbox-label">
+                    <i class="fa fa-moon-o"></i>
+                    <i class="fa fa-sun-o"></i>
+                    <span class="ball"></span>
+                </label>
+            </div>
+
+
+            <div class="dropdown">
+                <i class="fa fa-language" aria-hidden="true"></i>
+                <a class="dropdown-toggle" href="#" id="Dropdown" role="button" data-mdb-toggle="dropdown"
+                    aria-expanded="false"
+                    style="color: black; font-size: 14px; font-weight: bold;text-decoration: none;margin-right: 30px;">English
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="Dropdown">
+                    <li>
+                        <a class="dropdown-item" href="#"><i class="fa fa-language" aria-hidden="true"></i>English
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#"><i class="flag-portugal flag"></i>Hindi</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container" style="margin-top:25px;">
+            <!-- image background -->
+            <div class="jumbotron revealUp">
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <h1 class="display-6 text-light" id="revealUp" style="text-align: center;">
+                    <span>The </span>
+                    <span>AI </span>
+                    <span>World </span>
+                    <span>That </span>
+                    <span>Just </span>
+                    <span>Works. </span>
+                </h1>
+                <p class="lead text-light">“The coming era of Artificial Intelligence will not be the era of war, but be
+                    the era of
+                    deep compassion and non-violence.”</p>
+                <hr class="my-4">
+                <div class="text-center">
+                    <a class="btn btn-primary btn-md" href="#" role="button" style="border-radius: 20px;">Get
+                        AI>Tools</a>
+                </div>
+                <p style="text-align: center; color: white;">AI doesn't have to be evil to destroy humanity –
+                </p>
+            </div>
+        </div>
+
+        <!-- another section zig zag -->
+        <div class="container marketing" style="margin-bottom: 20px;">
+
+
+            <!-- START THE FEATURETTES -->
+
+            <div class="container-size">
+                <hr class="featurette-divider">
+                <div class="row featurette" style="margin-left: 10%; margin-right:10%;">
+                    <div class="col-lg-7">
+                        <h2 class="featurette-heading wave">Chat Openai.
+                            <span class="text-muted">It’ll blow your mind.</span>
+                        </h2>
+                        <p class="lead lineUp">ChatGPT is a form of generative AI-- a tool that lets users enter prompts
+                            to
+                            receive humanlike images, text or videos that are created by AI. ChatGPT is similar to the
+                            automated chat services found on customer service websites, as people can ask it questions
+                            or request clarification to ChatGPT's replies.
+                        </p>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="box">
+                            <img src="aiimage/6.jpg" alt="" class="img-fluid"
+                                style="width: 100%; max-width: 300px; height: auto; margin-left: 30%;margin-top: -16px;">
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette" style=" margin-right:10%;">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading wave">Oh yeah, it’s that good.
+                            <span class="text-muted">Rytr Me.</span>
+                        </h2>
+                        <p class="lead lineUp">Rytr me™ is an AI writing assistant that helps you create high-quality
+                            content.
+                            Highlights: Knowledge Base Available, Live Chat Option Available, No Credit Card Required.
+                            Browse Resources. AI writing assistant that helps you create high-quality content, in just a
+                            few second.</p>
+                    </div>
+                    <div class="col-lg-5 order-md-1">
+                        <div class="box">
+                            <img src="aiimage/7.jpg" alt="" class="img-fluid"
+                                style="width: 100%; max-width: 300px; height: auto; margin-left: 24%;margin-top: -16px;">
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette" style="margin-left: 10%; margin-right:10%;">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading wave">And last but not least, this one.
+                            <span class="text-muted">Merlin Foyer Work.</span>
+                        </h2>
+                        <p class="lead lineUp">And yes, Merlin is an Open AI powered extension that you can use anywhere
+                            on the
+                            internet to take your dull internet experience from drab to fab! It provides you with the
+                            power of Open AI's GPT for everything you search or write online, including google searches,
+                            Gmail, Google sheets, and beyond.</p>
+                    </div>
+                    <div class="col-lg-5 order-md-1">
+                        <div class="box">
+                            <img src="aiimage/3.jpg" alt="" class="img-fluid"
+                                style="width: 100%; max-width: 300px; height: auto; margin-left: 24%;margin-top: -16px;">
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+            </div>
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row" style="margin-left: 10%; margin-right:10%;margin-top: 50px;">
+                <div class="col-lg-4">
+                    <img src="https://source.unsplash.com/300x100/?ai" class="img-fluid flip" alt=""
+                        style="border-radius: 50px;">
+                    <h2 style="text-align: center;">Charley.ai</h2>
+                    <p style="text-align: center;">Turn 3 words into 10,000.</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="https://source.unsplash.com/300x100/?ai-robot" class="img-fluid flip" alt=""
+                        style="border-radius: 50px;">
+                    <h2 style="text-align: center;">Easy-peasy.ai</h2>
+                    <p style="text-align: center;">Easy Content Creation.</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="https://source.unsplash.com/300x100/?robots-ai" class="img-fluid flip" alt=""
+                        style="border-radius: 50px;">
+                    <h2 style="text-align: center;">Quickie.ai</h2>
+                    <p style="text-align: center;">ChatGPt for Team.</p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+            <!-- /END THE FEATURETTES -->
+
+        </div>
+
+        <!-- footer -->
+        <footer class="footer-bs">
+            <div class="row">
+                <div class="col-md-4 footer-brand animated fadeInLeft">
+                    <h2><span class="text-primary">AI></span>World</h2>
+                    <div>
+                        <span id="text1"></span>
+                        <span id="text2"></span>
+                    </div>
+
+                    <p>Hii👋, This is AI Here make your life easier I was developed and currently
+                        I am working like human. </p>
+                    <p>© 2023 DeepakHere, All rights reserved</p>
+                </div>
+                <div class="col-md-3 footer-nav animated fadeInUp">
+                    <div class="col-md-6">
+                        <ul class="list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 footer-social animated fadeInDown">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/deepgupta14/"><i class="fa fa-linkedin"
+                                    style="color: #007bff;"></i> LinkedIn</a></li>
+                        <li><a href="https://www.github.com/DeepakHere"><i class="fa fa-github"></i> Github</a></li>
+                        <li><a href="https://www.facebook.com/codingsmash/"><i class="fa fa-facebook"
+                                    style="color: #007bff;"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/thedeep_14/"><i class="fa fa-instagram" style="background:-webkit-linear-gradient(#4f5bd5,#d62976,#fa7e1e); 
+                    -webkit-background-clip: text;-webkit-text-fill-color: transparent;"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-ns animated fadeInRight">
+                    <h4><i class="fa fa-youtube" style="color: red;"></i> YOUTUBE</h4>
+                    <p><a href="https://youtube.com/c/codingclasses"
+                            style="color:rgb(111, 228, 68);">@Thevirtualmentor,</a>
+                        This is my
+                        Youtube channel you go through it for further tutorials with explanation.</p>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <a href="https://youtube.com/c/codingclasses">
+                                <button class="btn btn-default" type="button" style="margin-left: 10px;">
+                                    <i class="fa fa-youtube" style="color: red;"></i></button>
+                            </a>
+                        </span>
+                    </div><!-- /input-group -->
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const checkbox = document.getElementById("checkbox")
+        checkbox.addEventListener("change", () => {
+            document.body.classList.toggle("dark")
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="gsap.js"></script>
+
+    <!-- Scripts cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
